@@ -1,14 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import ShiftRosterCalendar from './components/ShiftRosterCalendar';
+import AppRoutes from "./routes/AppRoutes";
 
-function App() {
-  return (
-   <React.Fragment>
-    <ShiftRosterCalendar/>
-   </React.Fragment>
-  );
+const App=()=> {
+  return <AppRoutes />;
 }
 
 export default App;

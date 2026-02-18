@@ -1,6 +1,168 @@
 {
-  "departments": [],
-  "doctors": [],
-  "shifts": [],
+  "departments": [
+    {
+      "id": 1771395963193,
+      "name": "Cardiology"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1771395991204,
+      "name": "Ebii",
+      "age": 30,
+      "email": "ebinesardbc28@gmail.com",
+      "phone": "8056915752",
+      "gender": "Male",
+      "country": "India",
+      "departmentId": 1771395963193,
+      "weekOffDay": 1,
+      "currentShiftIndex": 0
+    },
+    {
+      "id": 1771396017011,
+      "name": "Vikki",
+      "age": 30,
+      "email": "ebinesardbc28@gmail.com",
+      "phone": "80569157",
+      "gender": "Male",
+      "country": "India",
+      "departmentId": 1771395963193,
+      "weekOffDay": 2,
+      "currentShiftIndex": 0
+    },
+    {
+      "id": 1771396025550,
+      "name": "Sasi",
+      "age": 30,
+      "email": "ebinesardbc28@gmail.com",
+      "phone": "80569157",
+      "gender": "Male",
+      "country": "India",
+      "departmentId": 1771395963193,
+      "weekOffDay": 3,
+      "currentShiftIndex": 0
+    },
+    {
+      "id": 1771396042015,
+      "name": "Tanii",
+      "age": 30,
+      "email": "ebinesardbc28@gmail.com",
+      "phone": "80569157",
+      "gender": "Female",
+      "country": "India",
+      "departmentId": 1771395963193,
+      "weekOffDay": 4,
+      "currentShiftIndex": 0
+    },
+    {
+      "id": 1771396048759,
+      "name": "John",
+      "age": 30,
+      "email": "ebinesardbc28@gmail.com",
+      "phone": "80569157",
+      "gender": "Female",
+      "country": "India",
+      "departmentId": 1771395963193,
+      "weekOffDay": 5,
+      "currentShiftIndex": 0
+    },
+    {
+      "id": 1771396057958,
+      "name": "Sam",
+      "age": 30,
+      "email": "ebinesardbc28@gmail.com",
+      "phone": "80569157",
+      "gender": "Female",
+      "country": "India",
+      "departmentId": 1771395963193,
+      "weekOffDay": 6,
+      "currentShiftIndex": 0
+    },
+    {
+      "id": 1771396065776,
+      "name": "Ram",
+      "age": 30,
+      "email": "ebinesardbc28@gmail.com",
+      "phone": "80569157",
+      "gender": "Female",
+      "country": "India",
+      "departmentId": 1771395963193,
+      "weekOffDay": 0,
+      "currentShiftIndex": 0
+    },
+    {
+      "id": 1771396076773,
+      "name": "Arun",
+      "age": 30,
+      "email": "ebinesardbc28@gmail.com",
+      "phone": "80569157",
+      "gender": "Female",
+      "country": "India",
+      "departmentId": 1771395963193,
+      "weekOffDay": 1,
+      "currentShiftIndex": 0
+    }
+  ],
+  "shifts": [
+    {
+      "id": 1771396126016,
+      "name": "Morning",
+      "order": 0,
+      "startTime": "08:00",
+      "endTime": "04:00"
+    },
+    {
+      "id": 1771396194199,
+      "name": "Evening",
+      "order": 1,
+      "startTime": "04:00",
+      "endTime": "12:00"
+    },
+    {
+      "id": 1771396214723,
+      "name": "Night",
+      "order": 2,
+      "startTime": "12:00",
+      "endTime": "08:00"
+    }
+  ],
+  "shiftAssignments": [
+    {
+      "id": 1771396139559,
+      "departmentId": 1771395963193,
+      "shiftId": 1771396126016,
+      "doctorId": 1771395991204
+    },
+    {
+      "id": 1771396146249,
+      "departmentId": 1771395963193,
+      "shiftId": 1771396126016,
+      "doctorId": 1771396017011
+    },
+    {
+      "id": 1771396151929,
+      "departmentId": 1771395963193,
+      "shiftId": 1771396126016,
+      "doctorId": 1771396025550
+    },
+    {
+      "id": 1771396272917,
+      "departmentId": 1771395963193,
+      "shiftId": 1771396194199,
+      "doctorId": 1771396048759
+    },
+    {
+      "id": 1771396276769,
+      "departmentId": 1771395963193,
+      "shiftId": 1771396194199,
+      "doctorId": 1771396065776
+    },
+    {
+      "id": 1771396282981,
+      "departmentId": 1771395963193,
+      "shiftId": 1771396194199,
+      "doctorId": 1771396076773
+    }
+  ],
   "rosters": []
 }
