@@ -33,6 +33,7 @@ const RosterPage = () => {
   const [selectedDept, setSelectedDept] = useState<number | "ALL">("ALL");
   const [selectedShift, setSelectedShift] = useState<number | "ALL">("ALL");
   const [loading, setLoading] = useState(false);
+  const [selectedDoctor, setSelectedDoctor] = useState<number | "ALL">("ALL");
   const [currentMonth, setCurrentMonth] = useState<number>(
     new Date().getMonth(),
   );
@@ -43,10 +44,18 @@ const RosterPage = () => {
     new Date(currentYear, currentMonth, 1),
   );
 
-  const filteredRoster =
-    selectedShift === "ALL"
-      ? roster
-      : roster.filter((r) => r.shiftId === selectedShift);
+  const filteredRoster = roster.filter((r) => {
+  const shiftMatch =
+    selectedShift === "ALL" || r.shiftId === selectedShift;
+
+  const doctorMatch =
+    selectedDoctor === "ALL" || r.doctorId === selectedDoctor;
+
+  const deptMatch =
+    selectedDept === "ALL" || r.departmentId === selectedDept;
+
+  return shiftMatch && doctorMatch && deptMatch;
+});
 
   useEffect(() => {
     const load = async () => {
@@ -208,9 +217,12 @@ const RosterPage = () => {
             departments={departments}
             selectedDept={selectedDept}
             shifts={shifts}
+            doctors={doctors}
+            selectedDoctor={selectedDoctor}
             selectedShift={selectedShift}
             onShiftChange={setSelectedShift}
             onDeptChange={setSelectedDept}
+            onDoctorChange={setSelectedDoctor}
             onGenerate={handleGenerate}
           />
         </Paper>

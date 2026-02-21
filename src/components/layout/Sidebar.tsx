@@ -18,6 +18,7 @@ import ScheduleIcon from "@mui/icons-material/Schedule";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import ShieldIcon from '@mui/icons-material/Shield'; // For a logo look
 import { useNavigate, useLocation } from "react-router-dom";
+import MedicalServicesIcon from "@mui/icons-material/MedicalServices";
  
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
@@ -28,6 +29,7 @@ const Sidebar = () => {
     { label: "Departments", path: "/departments", icon: <ApartmentIcon /> },
     { label: "Shift Setup", path: "/shifts", icon: <ScheduleIcon /> },
     { label: "Master Roster", path: "/roster", icon: <CalendarTodayIcon /> },
+    { label: "Front Desk", path: "/frontdesk", icon: <MedicalServicesIcon /> },
   ];
  
   return (
@@ -175,9 +177,7 @@ const Sidebar = () => {
            <Typography variant="body2" sx={{ fontWeight: 700, color: 'white' }}>
               System Admin
            </Typography>
-           <Typography variant="caption" sx={{ color: alpha("#fff", 0.5) }}>
-              v2.1.0-stable
-           </Typography>
+           
         </Box>
       </Drawer>
     </>
